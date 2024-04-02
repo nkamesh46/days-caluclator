@@ -67,8 +67,9 @@ function App() {
     if (selectedStartDate && selectedEndDate) {
       if (selectedStartDate > selectedEndDate) {
         alert("Start Date should be less than End Date");
+      } else {
+        caluclateDifference(selectedStartDate, selectedEndDate);
       }
-      caluclateDifference(selectedStartDate, selectedEndDate);
     } else {
       alert("Selection of Start Date and End Date is mandatory");
     }
